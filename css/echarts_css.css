@@ -1,5 +1,8 @@
 *{
 	box-sizing:border-box;
+	padding:0px;
+	margin:0px;
+	border:0px;
 }
 html{
 	height: 100%;
@@ -17,7 +20,8 @@ body{
 	right: 0;
 	left: 0;
 	margin-bottom: 20px;
-	min-height: 50px;
+	height:50px;
+	/*min-height: 50px;*/
 	display: block;
 	background-color: rgba(41,60,85,0.4);
 	transition: background-color 0.5s linear;
@@ -55,21 +59,73 @@ body{
 	color: #333;
 	display: inline-block;
 	float: left;
+	transition: background-color 0.5s linear;
 }
-#fixed_head .inner_head .head_nav>li{
+#fixed_head .inner_head .head_nav>li:hover{
 	list-style: none;
-}
-#fixed_head .inner_head .head_nav li.active>a{
+	background-color: #162436;
 	padding-top: 11px;
 	border-top: 4px solid #a9334c;
+	float:left;
+}
+#fixed_head .inner_head .head_nav li{
 	color: #fff;
-	background-color: #0c151f;
+	background-color: transparent;
 	transition: 0.5s background-color;
 	padding:15px 20px;
 	line-height: 20px;
+	float:left;
+	list-style: none;
 }
 #fixed_head .inner_head .head_nav li.active a{
 	color: #fff;
+	height:20px;
+	display:block;
+	background-color: transparent;
+	text-decoration: none;
+}
+.caret{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	margin-top:2px;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+#fixed_head .inner_head .head_nav_right{
+	position:absolute;
+	right:0px;
+	padding-left: 0px;
+	font-size: 14px;
+	color: #333;
+	display: inline-block;
+	float: right !important;
+	margin-right: -15px;
+	transition: background-color 0.5s linear;
+}
+#fixed_head .inner_head .head_nav_right>li:hover{
+	list-style: none;
+	background-color: #162436;
+	padding-top: 11px;
+	border-top: 4px solid #a9334c;
+	float:right;
+}
+#fixed_head .inner_head .head_nav_right li{
+	color: #fff;
+	background-color: transparent;
+	transition: 0.5s background-color;
+	padding:15px 20px;
+	line-height: 20px;
+	float:right;
+	list-style: none;
+}
+#fixed_head .inner_head .head_nav_right li.active a{
+	color: #fff;
+	height:20px;
+	display:block;
 	background-color: transparent;
 	text-decoration: none;
 }
