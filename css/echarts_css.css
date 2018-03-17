@@ -77,6 +77,23 @@ body{
 	float:left;
 	list-style: none;
 }
+#fixed_head .inner_head .head_nav .drop-down{
+	position: absolute;
+	right:-20px;
+	float: left;
+	z-index: 50;
+	width: 70px;
+}
+#head .doc_more{
+	color: #f9f9f9;
+	background-color: #162436;
+	text-decoration: none;
+	display: block;
+	/*	margin: 0 !important;*/
+	padding: 8px 20px;
+	position: relative;
+	text-align: center;
+}
 #fixed_head .inner_head .head_nav li.active a{
 	color: #fff;
 	height:20px;
